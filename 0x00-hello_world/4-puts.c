@@ -1,10 +1,10 @@
 #include <stdio.h>
-
-/*Prints a specified message
- *Returns 0 if the answer is correct
- */
+/**
+* main - Entry point
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle\n");
-	return (nb > 0);
+	return (0);
 }
