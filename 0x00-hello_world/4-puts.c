@@ -1,9 +1,10 @@
 #include <stdio.h>
-/**Prints a specified message
- * returns 0 if the answer is correct
+
+/*Prints a specified message
+ *Returns 0 if the answer is correct
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\");
-	return 0;
+	puts("\"Programming is like building a multilingual puzzle\n");
+	return (nb > 0);
 }
