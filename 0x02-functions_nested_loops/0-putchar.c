@@ -1,21 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ *_putchar - Entry point
  *
- * prints _putchar
+ * @c: the character to be printed
  *
- * Return: Always 0 (Success)
+ * The character to be printed
+ *
+ * Return: On success, returns the character. On error, returns -1.
  */
-int main(void)
+int _putchar(char c)
 {
-	char *i = "_putchar";
-
-	while (*i)
-	{
-		putchar(*i);
-		i++;
-	}
-	putchar('\n');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
