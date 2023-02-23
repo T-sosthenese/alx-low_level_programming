@@ -1,33 +1,22 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * more_numbers - prints 0 to 14 ten times
+ * more_numbers - nested function that prints numbers
  */
 void more_numbers(void)
 {
-	int n;
-
 	int i;
 
-	i = 0;
-	while (i <= 9)
+	for (i = 0; i < 10; i++)
 	{
-		n = 0;
-		while (n <= 14)
+		int j;
+
+		for (j = 0; j <= 14; j++)
 		{
-			if (n < 10)
-			{
-				putchar(n + '0');
-			}
-			else
-			{
-				putchar(n / 10 + '0');
-				putchar(n % 10 + '0');
-			}
-			n++;
+			if (j >= 10)
+				putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
 		}
-		i++;
 		putchar('\n');
 	}
-
 }
