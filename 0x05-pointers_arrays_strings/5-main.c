@@ -12,6 +12,5 @@ int main(void)
 
     printf("%s\n", s);
     rev_string(s);
-    printf("%s\n", s);
     return (0);
 }
