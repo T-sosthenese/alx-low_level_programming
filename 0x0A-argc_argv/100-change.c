@@ -5,7 +5,7 @@
 /**
  * main - main function
  * @argc: argument counter
- * @argv: argument vector
+ * @argv: argument array
  *
  * Return: Returns 0 when program is successful
  */
