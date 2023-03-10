@@ -2,6 +2,8 @@
 #include <string.h>
 /**
  * main - Entry of the program
+ * @argc: The character counter
+ * @argv: An array of characters
  * Return: 0 (Success)
  */
 int main(int argc, char *argv[])
