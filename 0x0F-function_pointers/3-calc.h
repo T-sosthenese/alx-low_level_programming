@@ -1,16 +1,16 @@
 #ifndef CALC_H
 #define CALC_H
 
-/**
- * Desc: Header file containg structures and prototypes
+/*
+ * Desc: Header file containing all structures and
+ *       prototypes used by the 3-main.c program.
  */
 
 /**
- * struct op - A struct op
- * @op: the operator used for operations
- * @f: function pointer
+ * struct op - A struct op.
+ * @op: The operator.
+ * @f: The associated function.
  */
-
 typedef struct op
 {
 	char *op;
@@ -24,4 +24,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-#endif /*CALC_H*/
+#endif
