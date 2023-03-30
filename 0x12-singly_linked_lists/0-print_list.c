@@ -11,10 +11,12 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *current = h;
+	const list_t *current;
 
-	size_t count = 0;
+	size_t count;
 
+	current = h;
+	count = 0;
 	while (current != NULL)
 	{
 		if (current->str == NULL)
