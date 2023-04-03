@@ -25,7 +25,7 @@ size_t print_listint(const listint_t *h)
 		}
 		else
 		{
-			printf("[0] (nil)\n");
+			printf("0\n");
 		}
 		counter++;
 		ptr = ptr->next;
