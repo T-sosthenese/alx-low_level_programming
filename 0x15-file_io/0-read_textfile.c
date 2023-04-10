@@ -11,14 +11,11 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t bytes_read = 0;
+	ssize_t bytes_read, w, fd;
 
-	ssize_t w;
+	char *buffer;
 
-	ssize_t fd;
-
-	char *buffer = malloc(sizeof(char) * letters);
-
+	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
 
