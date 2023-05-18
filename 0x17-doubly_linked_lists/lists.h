@@ -2,7 +2,7 @@
 #define LISTS_H
 
 /**
- * struct dlistint_s - doubly linked list
+ * struct dlinstint_s - doubly linked list
  * @n: integer
  * @prev: points to the previous node
  * @next: points to the next node
