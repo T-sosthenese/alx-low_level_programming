@@ -1,7 +1,12 @@
-CC = gcc
-SRC = main.c school.c
-OBJ = $(SCR:%.c=%.o)
-NAME = school
+CC := gcc
+SRC := main.c school.c
+OBJ := $(SCR:.c=.o)
+NAME := school
 
-all: $(OBJ)
-	$(cc) $(SRC) -o $(NAME)
+all: $(NAME)  # Rule that builds the executable
+
+$(NAME): $(OBJ)  # Rule that links object files to create the executable
+	$(CC) $(OBJ) -o $(NAME)
+
+%.o: %.c  # Rule that compiles each .c file into .o without linking
+	$(CC) -c $< -o $@
